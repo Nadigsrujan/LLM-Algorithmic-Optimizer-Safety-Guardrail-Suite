@@ -1,0 +1,16 @@
+# --- UI (required) -----------------------------------------------------------
+streamlit>=1.30
+
+# --- Production upgrades (recommended; all have graceful fallbacks) -----------
+tiktoken>=0.5        # Improvement 1: real BPE token counting
+scikit-learn>=1.3    # Improvement 2: TF-IDF + cosine relevance scoring
+ollama>=0.3          # Improvement 6: local LLM integration (needs Ollama daemon)
+
+# --- Testing -----------------------------------------------------------------
+pytest>=7.0
+
+# Notes:
+# * tiktoken / scikit-learn / ollama are OPTIONAL at runtime — the app falls
+#   back to a char-heuristic tokenizer, keyword-overlap scoring, and a degraded
+#   "daemon offline" message respectively, so it still runs fully offline.
+# * Aho-Corasick is implemented in pure stdlib (no pyahocorasick build needed).
