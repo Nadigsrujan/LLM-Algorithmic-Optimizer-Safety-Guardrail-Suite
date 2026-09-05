@@ -1,6 +1,6 @@
 # Local LLM Algorithmic Optimizer & Safety Guardrail Suite
 
-A Design & Analysis of Algorithms (DAA) project that applies four classic
+A Design & Analysis of Algorithms  project that applies four classic
 algorithm paradigms as a real pre-processing layer in front of a local LLM
 chat box, now upgraded with real tokenisation, TF-IDF relevance, a
 self-describing Huffman archive, an Aho-Corasick benchmark, and a live local
