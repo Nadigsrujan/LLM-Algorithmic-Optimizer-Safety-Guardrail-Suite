@@ -52,7 +52,7 @@ streamlit run app.py            # or: python -m streamlit run app.py
 pytest                          # run the test suite
 ```
 
-** For a real model answer at the end of the pipeline: **
+For a real model answer at the end of the pipeline: 
 
 ```bash
 ollama serve && ollama pull llama3.2:1b
